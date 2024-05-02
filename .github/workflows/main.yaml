@@ -1,0 +1,33 @@
+name: workflow
+
+on:
+  push: 
+    branches:
+      - main
+    paths-ignore:
+      - "README.md"
+
+permissions:
+  id-token: write 
+  contents: read
+
+jobs: 
+  integration:
+    name: Continuous integration
+    runs-on: ubuntu-latest
+    steps:
+      - 
+
+  push_to_registry:
+    name: Push Docker image to Docker hub
+    runs-on: ubuntu-latest
+    steps:
+      - 
+
+
+  Continuous-Deployment:
+    needs: push_to_registry
+    runs-on: self-hosted
+    steps:
+      - 
+

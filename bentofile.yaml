@@ -1,0 +1,17 @@
+service: "Xray.ml.model.model_service:svc"
+labels:
+  owner: sowmya
+  stage: dev
+include:
+- "Xray/ml/model/model_service.py"
+- "Xray/constant/training_pipeline/__init__.py"
+exclude:
+- envdl/
+python:
+  packages:
+  - torch
+  - torchvision
+  - pillow
+  - numpy
+  extra_index_url:
+  - "https://download.pytorch.org/whl/cpu"
