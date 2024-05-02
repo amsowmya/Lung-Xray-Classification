@@ -28,9 +28,6 @@ jobs:
 
       - name: Run unit tests
         run: echo "Running unit tests"
-      
-
-
 
   push_to_registry:
     name: Push Docker image to Docker hub
@@ -61,9 +58,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-
-
+          
   Continuous-Deployment:
     needs: push_to_registry
     runs-on: self-hosted

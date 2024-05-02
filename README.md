@@ -42,3 +42,15 @@ Workflow (yaml)
 - CI/CD/CD
 - CI/CD - Github Action server
 - CD - EC2 (as self hosted runner)
+
+==========================================
+
+###### Install Docker on EC2 machine #########
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+curl -fsSL https://get.docker.com -o get-docker.sh
+ls
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker
