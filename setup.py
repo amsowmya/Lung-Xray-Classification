@@ -20,7 +20,7 @@ setup(
     description="Projecto for deep learning with Pytorch",
     author="Sowmya AM",
     author_email="sowmya.anekonda@gmail.com",
-    include_requires=get_requirements("requirements_dev.txt"),
+    # include_requires=get_requirements("requirements_dev.txt"),
     packages=find_packages(),
-    # requires=
+    install_requires = []
 )
