@@ -52,5 +52,11 @@ sudo apt-get upgrade -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 ls
 sudo sh get-docker.sh
+docker --version
+docker images
 sudo usermod -aG docker ubuntu
 newgrp docker
+docker images
+
+# ############ After installing Docker on EC2 ###########
+Go to Gothub action -> settings -> Actions -> Runner -> Execute all commands from here
